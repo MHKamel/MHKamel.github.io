@@ -1,218 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mohamed Amin - Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamed Amin – Senior Webmaster & DevOps Engineer</title>
+  <meta name="description" content="Senior Webmaster, MarTech & Ecommerce Expert, DevOps Engineer, AI & Web Infrastructure Specialist based in Berlin.">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Top Navbar -->
-  <nav class="top-nav" role="navigation" aria-label="Quick site sections">
-    <div class="nav-container">
-      <div class="brand">
-        <img src="profile.jpeg" alt="Mohamed Amin" class="nav-logo" />
-        <span>Mohamed Amin</span>
-      </div>
-      <ul>
-        <li><a href="#about"><span class="nav-icon">🔎</span> <span class="nav-label">About</span></a></li>
-        <li><a href="#skills"><span class="nav-icon">💡</span> <span class="nav-label">Skills</span></a></li>
-        <li><a href="#experience"><span class="nav-icon">📦</span> <span class="nav-label">Experience</span></a></li>
-        <li><a href="#education"><span class="nav-icon">📚</span> <span class="nav-label">Education</span></a></li>
-        <li><a href="#projects"><span class="nav-icon">🛠️</span> <span class="nav-label">Projects</span></a></li>
-        <li><a href="#courses"><span class="nav-icon">🎓</span> <span class="nav-label">Courses</span></a></li>
-        <li><a href="#languages"><span class="nav-icon">🌐</span> <span class="nav-label">Languages</span></a></li>
-        <li><a href="#contact"><span class="nav-icon">✉️</span> <span class="nav-label">Contact</span></a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Banner & Glass Card -->
+  <!-- Header and Navbar -->
   <header>
-    <div class="banner-hero">
-      <img src="banner.jpeg" alt="Programming banner" class="banner-img">
-      <div class="banner-glass"></div>
-      <div class="profile-card-glass" id="profile-hero-card">
-        <img src="profile.jpeg" alt="Mohamed Amin profile photo" class="profile-hero-img">
-        <h1>Mohamed Amin</h1>
-        <h2 id="animated-title"></h2>
-        <div class="hero-contacts">
-          <span title="Location">📍 Berlin, Germany</span>
-          <span title="Phone">☎️ <a href="tel:+4915231698987">+49 1523 1698987</a></span>
-          <span title="Email">📧 <a href="mailto:mohamed.hassankamel.94@gmail.com">mohamed.hassankamel.94@gmail.com</a></span>
+    <div class="navbar">
+      <div class="nav-profile">
+        <img src="profile.jpeg" alt="Profile photo" class="nav-avatar"/>
+        <div>
+          <div class="nav-name">Mohamed Amin</div>
         </div>
-        <div class="hero-socials">
-          <a href="https://www.linkedin.com/in/mohamed-hassan-kamel/" target="_blank" class="social-link">LinkedIn</a> |
-          <a href="https://github.com/MHKamel" target="_blank" class="social-link">GitHub</a>
-        </div>
-        <div class="cv-buttons">
-          <button id="dark-mode-toggle">🌙 Dark Mode</button>
-          <a class="download-btn" href="Mohamed's Resume.pdf" download>⬇️ Download PDF CV</a>
-        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about"><span class="nav-icon">🔎</span> About</a></li>
+          <li><a href="#skills"><span class="nav-icon">💡</span> Skills</a></li>
+          <li><a href="#experience"><span class="nav-icon">💼</span> Experience</a></li>
+          <li><a href="#education"><span class="nav-icon">🎓</span> Education</a></li>
+          <li><a href="#projects"><span class="nav-icon">🧑‍💻</span> Projects</a></li>
+          <li><a href="#courses"><span class="nav-icon">📚</span> Courses</a></li>
+          <li><a href="#languages"><span class="nav-icon">🌍</span> Languages</a></li>
+          <li><a href="#contact"><span class="nav-icon">✉️</span> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="banner-wrap">
+      <img src="banner.jpeg" alt="Banner" class="banner"/>
+      <div class="banner-overlay"></div>
+    </div>
+    <div class="profile-hero-card">
+      <img src="profile.jpeg" alt="Mohamed Amin" class="profile-img-hero"/>
+      <h1>Mohamed Amin</h1>
+      <h2>Senior Webmaster — MarTech & Ecommerce Expert <br> DevOps Engineer | AI & Web Infrastructure</h2>
+      <div class="contact-icons">
+        <span>📍 Berlin, Germany</span>
+        <span>📞 <a href="tel:+4915231698987">+49 1523 1698987</a></span>
+        <span>✉️ <a href="mailto:mohamed.hassankamel.94@gmail.com">mohamed.hassankamel.94@gmail.com</a></span>
+      </div>
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/mohamed-hassan-kamel/" target="_blank" class="social-link">LinkedIn</a> | 
+        <a href="https://github.com/MHKamel" target="_blank" class="social-link">GitHub</a>
+      </div>
+      <div class="cv-buttons">
+        <button id="toggle-mode"><span>🌙</span> Dark Mode</button>
+        <a class="download-btn" href="Mohamed's Resume.pdf" download>⬇️ Download PDF CV</a>
       </div>
     </div>
   </header>
 
-  <!-- KEY FIX: class="main-content" -->
-  <main class="main-content">
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h3>About</h3>
+      <p>
+        M.Eng Computer Science candidate in Berlin with 4+ years of experience designing automated, scalable web systems and analytics platforms — including for ASUS. I specialize in DevOps tooling, CI/CD infrastructure, and AI integration, with deep roots in e-commerce optimization and digital marketing automation.<br>
+        Previously served as a MarTech and eCommerce specialist, where I combined full-stack development with marketing automation, SEO, and predictive analytics to deliver high-impact customer experiences. I’m passionate about using data and DevOps principles to streamline development, personalize services, and scale infrastructure efficiently.<br>
+        Skilled at working cross-functionally across development, marketing, and sales teams, I bring a proven track record of clean code delivery, system reliability, and continuous improvement in fast-paced environments.
+      </p>
+    </section>
 
-  <section id="about" class="reveal">
-    <h3>🔎 About</h3>
-    <p>
-      M.Eng Computer Science candidate in Berlin with 4+ years of experience designing automated, scalable web systems and analytics platforms — including for ASUS. I specialize in DevOps tooling, CI/CD infrastructure, and AI integration, with deep roots in e-commerce optimization and digital marketing automation.<br>
-      Previously served as a MarTech and eCommerce specialist, where I combined full-stack development with marketing automation, SEO, and predictive analytics to deliver high-impact customer experiences. I’m passionate about using data and DevOps principles to streamline development, personalize services, and scale infrastructure efficiently.<br>
-      Skilled at working cross-functionally across development, marketing, and sales teams, I bring a proven track record of clean code delivery, system reliability, and continuous improvement in fast-paced environments.
-    </p>
-  </section>
+    <!-- Skills -->
+    <section id="skills">
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+)</li>
+        <li><strong>Backend:</strong> Python, PHP, MySQL, REST APIs</li>
+        <li><strong>AI/ML:</strong> Scikit-learn, Pandas, KMeans, ALS, analytics dashboards, Audience Segmentation, Predictive Analytics</li>
+        <li><strong>DevOps/Infra:</strong> GitHub Actions, Jenkins, CI/CD pipelines, Docker, Bash</li>
+        <li><strong>Cloud & Deployment:</strong> Azure Pipelines, Colab Pipelines, AWS (basics), serverless concepts</li>
+        <li><strong>Digital Marketing:</strong> SEO/SEM, Email Campaign Automation, Google Ads</li>
+        <li><strong>Collaboration:</strong> Agile, Jira, Git, Cross-team coordination</li>
+        <li><strong>Tools:</strong> Adobe Commerce (Magento), SEMrush, WordPress, Shopify, Google Analytics, Adobe Photoshop</li>
+      </ul>
+    </section>
 
-  <section id="skills" class="reveal">
-    <h3>💡 Skills</h3>
-    <ul class="skills">
-      <li><b>Frontend:</b> HTML5, CSS3, JavaScript (ES6+)</li>
-      <li><b>Backend:</b> Python, PHP, MySQL, REST APIs</li>
-      <li><b>AI/ML:</b> Scikit-learn, Pandas, KMeans, ALS, Analytics Dashboards, Audience Segmentation, Predictive Analytics</li>
-      <li><b>DevOps/Infra:</b> GitHub Actions, Jenkins, CI/CD pipelines, Docker, Bash</li>
-      <li><b>Cloud & Deployment:</b> Azure Pipelines, Colab Pipelines, AWS (basics), serverless concepts</li>
-      <li><b>Digital Marketing:</b> SEO/SEM, Email Campaign Automation, Google Ads</li>
-      <li><b>Collaboration:</b> Agile, Jira, Git, Cross-team coordination</li>
-      <li><b>Tools:</b> Adobe Commerce (Magento), SEMrush, WordPress, Shopify, Google Analytics, Adobe Photoshop</li>
-    </ul>
-  </section>
-
-  <section id="experience" class="reveal">
-    <h3>💼 Experience</h3>
-    <ul>
-      <li>
-        <b>Webmaster & Ecommerce Specialist</b> – ASUS, Cairo (Nov 2020 – Aug 2023)
+    <!-- Experience -->
+    <section id="experience">
+      <h3>Experience</h3>
+      <div class="exp-entry">
+        <strong>Webmaster & Ecommerce Specialist</strong> — ASUS, Cairo (Nov 2020 – Aug 2023)<br>
         <ul>
-          <li>ASUS and ROG Egypt webmaster: English & Arabic websites</li>
-          <li>Programming: HTML, CSS, JavaScript, PHP, MySQL; SEO (H-Tags)</li>
-          <li>Content, specs, e-shop, e-commerce, landing pages, banners, EDM via Photoshop & Illustrator</li>
-          <li>Automated email marketing workflows – highest CTR in EMEA</li>
-          <li>SEO strategy (SEMrush), campaigns, product launches</li>
-          <li>Integrated AI-powered analytics dashboards (Google Analytics, FlixMedia)</li>
+          <li>ASUS and ROG Egypt webmaster for both English & Arabic websites</li>
+          <li>Programming tools: HTML, CSS, JavaScript, PHP, MySQL</li>
+          <li>SEO using H-Tags, SEMrush</li>
+          <li>Managed content, e-commerce, E-Shop, product launches</li>
+          <li>Designed/optimized landing pages, banners (Photoshop), EDM</li>
+          <li>Automated email marketing workflows — highest CTR in EMEA</li>
+          <li>AI-powered analytics dashboards, user segmentation, Google Analytics, FlixMedia</li>
         </ul>
-      </li>
-      <li>
-        <b>Web Developer</b> – Perfect Touch Events, Cairo (Nov 2019 – Oct 2020)
-        <ul>
-          <li>HTML, CSS, PHP, MySQL, WordPress, JavaScript tasks</li>
-        </ul>
-      </li>
-      <li>
-        <b>Web Developer</b> – Gorgov DM Agency, Cairo (Nov 2018 – Oct 2019)
-        <ul>
-          <li>WordPress, JavaScript, Google Analytics</li>
-        </ul>
-      </li>
-      <li>
-        <b>GIS Specialist</b> – Hassan Allam Tech Mobilization & Statistics, Cairo (Jan 2018 – May 2018)
-        <ul>
-          <li>Satellite imagery processing using ARC GIS</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
+      </div>
+      <div class="exp-entry">
+        <strong>Web Developer</strong> — Perfect Touch Events, Cairo (Nov 2019 – Oct 2020)<br>
+        <span>HTML, CSS, PHP, MySQL, WordPress, JavaScript</span>
+      </div>
+      <div class="exp-entry">
+        <strong>Web Developer</strong> — Gorgov DM Agency, Cairo (Nov 2018 – Oct 2019)<br>
+        <span>WordPress, JavaScript, Google Analytics</span>
+      </div>
+      <div class="exp-entry">
+        <strong>GIS Specialist</strong> — Hassan Allam Tech Mobilization & Statistics, Cairo (Jan 2018 – May 2018)<br>
+        <span>ArcGIS, satellite image analysis and digitization</span>
+      </div>
+    </section>
 
-  <section id="education" class="reveal">
-    <h3>🎓 Education</h3>
-    <ul>
-      <li>
-        <b>Master of Engineering in Computer Science</b> – GISMA University of Applied Sciences, Berlin<br>
-        (09/2023 – 03/2025)
-        <ul>
-          <li>Thesis: AI-Driven Personalization & Customer Behavior in E-commerce</li>
-          <li>Focus: Artificial Intelligence, Machine Learning, Advanced Web Development, Cloud Computing</li>
-          <li>Projects: Predictive analytics, NLP, scalable web architectures, Agile/DevOps, hackathons</li>
-        </ul>
-      </li>
-      <li>
-        <b>Harvard University</b> – CS50's Web Programming with Python and JavaScript (2022)
-      </li>
-      <li>
-        <b>Bachelor's Degree, Geographic Information System</b> – Ain Shams University, Cairo (09/2013 – 07/2017)
-      </li>
-    </ul>
-  </section>
+    <!-- Education -->
+    <section id="education">
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <strong>Master of Engineering in Computer Science</strong> — GISMA University of Applied Sciences, Berlin (09/2023 – 03/2025)<br>
+          <em>Thesis:</em> AI-Driven Personalization & Customer Behavior in E-commerce<br>
+          <em>Key Focus Areas:</em> AI, ML, Advanced Web Dev, Cloud Computing, Software Engineering
+        </li>
+        <li>
+          <strong>CS50's Web Programming with Python and JavaScript</strong> — Harvard University (2022)
+        </li>
+        <li>
+          <strong>Bachelor's degree, Geographic Information Systems</strong> — Ain Shams University (2013 – 2017)
+        </li>
+      </ul>
+    </section>
 
-  <section id="projects" class="reveal">
-    <h3>🚀 Projects</h3>
-    <ul>
-      <li>
-        <b>AI-Powered E-commerce Targeting System</b> <br>
-        <small>Python, Scikit-learn, Pandas, Flask, K-Means, ALS, Cosine Similarity</small><br>
-        <span>Full-stack app for product recommendations & customer segmentation. Includes GDPR compliance and fairness.</span><br>
-        <a href="https://github.com/MHKamel/ecommerce-targeting-system" target="_blank">GitHub Repo</a>
-      </li>
-      <li>
-        <b>Trade in European Countries – Data Visualization Web App</b> <br>
-        <small>Python, Flask, HTML, CSS, Bootstrap, JQuery, Chart.js</small><br>
-        <span>Interactive data visualization for import/export trends in Europe.</span><br>
-        <a href="https://github.com/MHKamel/govtech" target="_blank">GitHub Repo</a>
-      </li>
-      <li>
-        <b>Carbon Footprint Monitoring Tool</b> <br>
-        <small>Python, Flask, SQLAlchemy, Bootstrap, Chart.js</small><br>
-        <span>Web-based carbon footprint tracking app.</span><br>
-        <a href="https://github.com/MHKamel/carbon_footprint" target="_blank">GitHub Repo</a>
-      </li>
-      <li>
-        <b>Machine Learning-Based Predictive Analysis</b> <br>
-        <small>Python, Jupyter Notebook, Scikit-learn, Pandas, NumPy</small><br>
-        <span>ML model for predictive analytics.</span><br>
-        <a href="https://github.com/MHKamel/Machine-Learning-Based-Predictive-Analysis" target="_blank">GitHub Repo</a>
-      </li>
-    </ul>
-  </section>
+    <!-- Projects -->
+    <section id="projects">
+      <h3>Projects</h3>
+      <ul>
+        <li>
+          <strong>AI-Powered E-commerce Targeting System</strong> — Python, Flask, Scikit-learn, Pandas, K-Means, ALS<br>
+          <a href="https://github.com/MHKamel/ecommerce-targeting-system" target="_blank">GitHub Repo</a>
+        </li>
+        <li>
+          <strong>Trade in European Countries – Data Visualization Web Application</strong> — Python, Flask, Chart.js<br>
+          <a href="https://github.com/MHKamel/govtech" target="_blank">GitHub Repo</a>
+        </li>
+        <li>
+          <strong>Carbon Footprint Monitoring Tool</strong> — Python, Flask, SQLAlchemy, Chart.js<br>
+          <a href="https://github.com/MHKamel/carbon_footprint" target="_blank">GitHub Repo</a>
+        </li>
+        <li>
+          <strong>Machine Learning-Based Predictive Analysis</strong> — Python, Scikit-learn, Pandas, NumPy<br>
+          <a href="https://github.com/MHKamel/Machine-Learning-Based-Predictive-Analysis" target="_blank">GitHub Repo</a>
+        </li>
+      </ul>
+    </section>
 
-  <section id="courses" class="reveal">
-    <h3>🎓 Courses & Certifications</h3>
-    <ul>
-      <li>Advanced Digital Marketing – Udacity</li>
-      <li>Content Marketing: Newsletters – LinkedIn</li>
-      <li>Email Marketing: Strategy and Optimization – LinkedIn</li>
-      <li>Email and Newsletter Marketing Foundations – LinkedIn</li>
-      <li>Digital Marketing Professional – Udacity</li>
-      <li>Google Analytics for Beginners</li>
-      <li>Advanced Google Analytics</li>
-      <li>Google Analytics for Power Users</li>
-      <li>Getting Started With Google Analytics 360</li>
-      <li>Introduction to Data Studio</li>
-      <li>Google Tag Manager Fundamentals</li>
-      <li>Advanced CSS Media Queries – LinkedIn</li>
-      <li>Digital Transformation – LinkedIn</li>
-      <li>Ecommerce Fundamentals – LinkedIn</li>
-      <li>Building Customer Loyalty – LinkedIn</li>
-      <li>SEO: Ecommerce Strategies – LinkedIn</li>
-      <li>Magento Community Edition 2 Essential Training – LinkedIn</li>
-      <li>Marketing Foundations: Ecommerce</li>
-    </ul>
-  </section>
+    <!-- Courses -->
+    <section id="courses">
+      <h3>Courses</h3>
+      <ul>
+        <li>Advanced Digital Marketing — Udacity</li>
+        <li>Content Marketing: Newsletters — LinkedIn</li>
+        <li>Email Marketing: Strategy and Optimization — LinkedIn</li>
+        <li>Email and Newsletter Marketing Foundations — LinkedIn</li>
+        <li>Digital Marketing Professional — Udacity</li>
+        <li>Google Analytics for Beginners, Advanced Google Analytics, Google Analytics for Power Users, Getting Started With Google Analytics 360, Introduction to Data Studio, Google Tag Manager Fundamentals</li>
+        <li>Advanced CSS Media Queries — LinkedIn</li>
+        <li>Digital Transformation, Ecommerce Fundamentals, Building Customer Loyalty, SEO: Ecommerce Strategies, Magento CE 2 Essential Training, Marketing Foundations: Ecommerce — LinkedIn</li>
+      </ul>
+    </section>
 
-  <section id="languages" class="reveal">
-    <h3>🌍 Languages</h3>
-    <ul>
-      <li>Arabic – Native or Bilingual Proficiency</li>
-      <li>English – Full Professional Proficiency</li>
-      <li>German & French – Elementary Proficiency</li>
-    </ul>
-  </section>
-    
-  <section id="contact" class="reveal">
-    <h3>✉️ Contact Me</h3>
-    <form class="contact-form" action="mailto:mohamed.hassankamel.94@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-    
-</main>
+    <!-- Languages -->
+    <section id="languages">
+      <h3>Languages</h3>
+      <ul>
+        <li>Arabic — Native or Bilingual Proficiency</li>
+        <li>English — Full Professional Proficiency</li>
+        <li>German & French — Elementary Proficiency</li>
+      </ul>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Mohamed Amin. All rights reserved.</p>
-</footer>
-<script src="main.js"></script>
+    <!-- Contact -->
+    <section id="contact">
+      <h3>Contact Me</h3>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Mohamed Amin
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
