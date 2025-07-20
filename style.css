@@ -180,14 +180,14 @@ section {
   padding: 33px 32px 23px 32px;
   margin-bottom: 30px;
   transition: box-shadow 0.3s;
-  border-left: 5px solid #ffd400;
+  border-left: 5px solid #1976d2; /* Blue! */
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s cubic-bezier(.77,0,.18,1), transform 0.8s cubic-bezier(.77,0,.18,1);
 }
-section.reveal.visible {
+section.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 section:hover {
   box-shadow: 0 8px 28px rgba(38,49,89,0.13);
@@ -313,11 +313,11 @@ body.dark-mode main {
 }
 body.dark-mode section {
   background: #232635;
-  border-left: 5px solid #fcbc04;
+  border-left: 5px solid #1976d2; /* Blue in dark mode */
   box-shadow: 0 2px 20px rgba(0,0,0,0.12);
 }
 body.dark-mode h3 {
-  color: #ffd400;
+  color: #68a0fa; /* Soft blue in dark mode */
 }
 body.dark-mode .cv-buttons button,
 body.dark-mode .cv-buttons .download-btn,
