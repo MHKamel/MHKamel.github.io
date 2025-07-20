@@ -64,3 +64,20 @@ function toggleDarkMode() {
     localStorage.setItem('darkmode', 'no');
   }
 }
+
+// ScrollSpy: highlight nav as you scroll
+window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('main section[id]');
+  const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+  let currentSection = null;
+  sections.forEach(section => {
+    const offsetTop = section.offsetTop - 90;
+    if(scrollY >= offsetTop) currentSection = section.id;
+  });
+  document.querySelectorAll('.side-nav a, .top-nav a').forEach(link => {
+    link.classList.remove('active');
+    if (currentSection && link.getAttribute('href') === `#${currentSection}`) {
+      link.classList.add('active');
+    }
+  });
+});
