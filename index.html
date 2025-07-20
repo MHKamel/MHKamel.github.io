@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohamed Amin – Senior Webmaster & DevOps Engineer</title>
-  <meta name="description" content="Senior Webmaster, MarTech & Ecommerce Expert, DevOps Engineer, AI & Web Infrastructure Specialist based in Berlin.">
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Mohamed Amin - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header and Navbar -->
+  <!-- Top Navbar -->
+  <nav class="top-nav" role="navigation" aria-label="Quick site sections">
+    <div class="nav-container">
+      <div class="brand">
+        <img src="profile.jpeg" alt="Mohamed Amin" class="nav-logo" />
+        <span>Mohamed Amin</span>
+      </div>
+      <ul>
+        <li><a href="#about"><span class="nav-icon">🔎</span> <span class="nav-label">About</span></a></li>
+        <li><a href="#skills"><span class="nav-icon">💡</span> <span class="nav-label">Skills</span></a></li>
+        <li><a href="#experience"><span class="nav-icon">📦</span> <span class="nav-label">Experience</span></a></li>
+        <li><a href="#education"><span class="nav-icon">📚</span> <span class="nav-label">Education</span></a></li>
+        <li><a href="#projects"><span class="nav-icon">🛠️</span> <span class="nav-label">Projects</span></a></li>
+        <li><a href="#courses"><span class="nav-icon">🎓</span> <span class="nav-label">Courses</span></a></li>
+        <li><a href="#languages"><span class="nav-icon">🌐</span> <span class="nav-label">Languages</span></a></li>
+        <li><a href="#contact"><span class="nav-icon">✉️</span> <span class="nav-label">Contact</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Banner & Glass Card -->
   <header>
-    <div class="navbar">
-      <div class="nav-profile">
-        <img src="profile.jpeg" alt="Profile photo" class="nav-avatar"/>
-        <div>
-          <div class="nav-name">Mohamed Amin</div>
+    <div class="banner-hero">
+      <img src="banner.jpeg" alt="Programming banner" class="banner-img">
+      <div class="banner-glass"></div>
+      <div class="profile-card-glass" id="profile-hero-card">
+        <img src="profile.jpeg" alt="Mohamed Amin profile photo" class="profile-hero-img">
+        <h1>Mohamed Amin</h1>
+        <div class="hero-subtitle" id="animated-title">
+          Senior Webmaster — MarTech & Ecommerce Expert <br>
+          DevOps Engineer | AI & Web Infrastructure
         </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#about"><span class="nav-icon">🔎</span> About</a></li>
-          <li><a href="#skills"><span class="nav-icon">💡</span> Skills</a></li>
-          <li><a href="#experience"><span class="nav-icon">💼</span> Experience</a></li>
-          <li><a href="#education"><span class="nav-icon">🎓</span> Education</a></li>
-          <li><a href="#projects"><span class="nav-icon">🧑‍💻</span> Projects</a></li>
-          <li><a href="#courses"><span class="nav-icon">📚</span> Courses</a></li>
-          <li><a href="#languages"><span class="nav-icon">🌍</span> Languages</a></li>
-          <li><a href="#contact"><span class="nav-icon">✉️</span> Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="banner-wrap">
-      <img src="banner.jpeg" alt="Banner" class="banner"/>
-      <div class="banner-overlay"></div>
-    </div>
-    <div class="profile-hero-card">
-      <img src="profile.jpeg" alt="Mohamed Amin" class="profile-img-hero"/>
-      <h1>Mohamed Amin</h1>
-      <h2>Senior Webmaster — MarTech & Ecommerce Expert <br> DevOps Engineer | AI & Web Infrastructure</h2>
-      <div class="contact-icons">
-        <span>📍 Berlin, Germany</span>
-        <span>📞 <a href="tel:+4915231698987">+49 1523 1698987</a></span>
-        <span>✉️ <a href="mailto:mohamed.hassankamel.94@gmail.com">mohamed.hassankamel.94@gmail.com</a></span>
-      </div>
-      <div class="hero-links">
-        <a href="https://www.linkedin.com/in/mohamed-hassan-kamel/" target="_blank" class="social-link">LinkedIn</a> | 
-        <a href="https://github.com/MHKamel" target="_blank" class="social-link">GitHub</a>
-      </div>
-      <div class="cv-buttons">
-        <button id="toggle-mode"><span>🌙</span> Dark Mode</button>
-        <a class="download-btn" href="Mohamed's Resume.pdf" download>⬇️ Download PDF CV</a>
+        <div class="hero-contacts">
+          <span title="Location">📍 Berlin, Germany</span>
+          <span title="Phone">☎️ <a href="tel:+4915231698987">+49 1523 1698987</a></span>
+          <span title="Email">📧 <a href="mailto:mohamed.hassankamel.94@gmail.com">mohamed.hassankamel.94@gmail.com</a></span>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/mohamed-hassan-kamel/" target="_blank" class="social-link">LinkedIn</a> |
+          <a href="https://github.com/MHKamel" target="_blank" class="social-link">GitHub</a>
+        </div>
+        <div class="cv-buttons">
+          <button id="dark-mode-toggle">🌙 Dark Mode</button>
+          <a class="download-btn" href="Mohamed's Resume.pdf" download>⬇️ Download PDF CV</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <main>
+  <!-- MAIN CONTENT - FIXED: add class="main-content" -->
+  <main class="main-content">
     <!-- About -->
     <section id="about">
       <h3>About</h3>
