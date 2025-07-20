@@ -4,13 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mohamed Amin | Senior Webmaster & DevOps Engineer</title>
-  <!-- Google Fonts: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Sticky Navigation Bar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Mohamed Amin</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button onclick="toggleDarkMode()" id="darkBtnNav">🌙</button>
+    </div>
+  </nav>
 
-<header>
+  <!-- HERO SECTION -->
+  <header id="hero">
     <div class="banner-wrap">
       <img src="banner.jpeg" alt="Banner" class="banner">
       <div class="banner-overlay"></div>
@@ -25,143 +39,55 @@
         <span title="Email">✉️ <a href="mailto:mohamed.hassankamel.94@gmail.com">mohamed.hassankamel.94@gmail.com</a></span>
       </div>
       <div class="hero-links">
-        <a href="https://www.linkedin.com/in/mohamed-hassan-kamel-webmaster/" target="_blank" class="social-link">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/mohamed-hassan-kamel-webmaster/" target="_blank" class="social-link" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="icon"> LinkedIn</a>
         <span>|</span>
-        <a href="https://github.com/MHKamel" target="_blank" class="social-link">GitHub</a>
+        <a href="https://github.com/MHKamel" target="_blank" class="social-link" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" class="icon"> GitHub</a>
       </div>
       <div class="cv-buttons">
-        <button onclick="toggleDarkMode()" id="darkBtn">🌙 Dark Mode</button>
         <a href="Mohamed's Resume.pdf" class="download-btn" download>⬇️ Download PDF CV</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section>
+    <section id="about" class="reveal">
       <h3>👋 About Me</h3>
       <p>
-        I am an M.Eng Computer Science candidate in Berlin with 4+ years of experience designing automated, scalable web systems and analytics platforms — including for ASUS. I specialize in DevOps tooling, CI/CD infrastructure, and AI integration, with deep roots in e-commerce optimization and digital marketing automation.
-      </p>
-      <p>
-        Previously served as a MarTech and eCommerce specialist, where I combined full-stack development with marketing automation, SEO, and predictive analytics to deliver high-impact customer experiences. Passionate about using data and DevOps principles to streamline development, personalize services, and scale infrastructure efficiently.
-      </p>
-      <p>
-        Skilled at working cross-functionally across development, marketing, and sales teams, I bring a proven track record of clean code delivery, system reliability, and continuous improvement in fast-paced environments.
+        M.Eng Computer Science candidate in Berlin with 4+ years of experience designing automated, scalable web systems and analytics platforms — including for ASUS. I specialize in DevOps tooling, CI/CD infrastructure, and AI integration, with deep roots in e-commerce optimization and digital marketing automation.
       </p>
     </section>
-
-    <section>
+    <section id="skills" class="reveal">
       <h3>💡 Skills</h3>
       <ul class="skills">
         <li><b>Frontend:</b> HTML5, CSS3, JavaScript (ES6+)</li>
         <li><b>Backend:</b> Python, PHP, MySQL, REST APIs</li>
-        <li><b>AI/ML:</b> Scikit-learn, Pandas, KMeans, ALS, Analytics Dashboards, Audience Segmentation, Predictive Analytics</li>
+        <li><b>AI/ML:</b> Scikit-learn, Pandas, KMeans, ALS, Analytics Dashboards</li>
         <li><b>DevOps/Infra:</b> GitHub Actions, Jenkins, CI/CD pipelines, Docker, Bash</li>
-        <li><b>Cloud & Deployment:</b> Azure Pipelines, Colab Pipelines, AWS (basics), Serverless Concepts</li>
-        <li><b>Digital Marketing:</b> SEO/SEM, Email Campaign Automation, Google Ads</li>
-        <li><b>Collaboration:</b> Agile, Jira, Git, Cross-team coordination</li>
-        <li><b>Tools:</b> Adobe Commerce (Magento), SEMrush, WordPress, Shopify, Google Analytics, Adobe Photoshop</li>
+        <li><b>Cloud:</b> Azure, AWS (basics), Serverless</li>
       </ul>
     </section>
-
-    <section>
+    <section id="experience" class="reveal">
       <h3>💼 Experience</h3>
-      <div class="experience">
-        <h4>Webmaster & Ecommerce Specialist <span>ASUS | Cairo | Nov 2020 – Aug 2023</span></h4>
-        <ul>
-          <li>Managed ASUS and ROG Egypt English & Arabic websites (HTML, CSS, JS, PHP, MySQL).</li>
-          <li>SEO, E-commerce, Magento, Landing Page Optimization, Email Marketing (Adobe tools).</li>
-          <li>Led automated email workflows, achieving top CTR in EMEA; managed SEO strategies to boost organic traffic.</li>
-          <li>Integrated AI-powered analytics (Google Analytics, FlixMedia), cross-team with sales and marketing.</li>
-        </ul>
-
-        <h4>Web Developer <span>Perfect Touch Events | Cairo | Nov 2019 – Oct 2020</span></h4>
-        <ul>
-          <li>Full-stack development: HTML, CSS, PHP, MySQL, WordPress, JavaScript.</li>
-        </ul>
-
-        <h4>Web Developer <span>Gorgov DM Agency | Cairo | Nov 2018 – Oct 2019</span></h4>
-        <ul>
-          <li>WordPress, JavaScript, Analytics for advertising clients.</li>
-        </ul>
-
-        <h4>GIS Specialist <span>Hassan Allam Tech | Cairo | Jan 2018 – May 2018</span></h4>
-        <ul>
-          <li>Redrew satellite imagery using ARC GIS, data enrichment.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h3>🎓 Education</h3>
       <ul>
-        <li>
-          <b>Master of Engineering in Computer Science</b>, GISMA University of Applied Sciences, Berlin (09/2023 – 03/2025)<br>
-          <span style="color: #888;">Thesis: AI-Driven Personalization & Customer Behavior in E-commerce</span>
-        </li>
-        <li>
-          <b>CS50's Web Programming</b> with Python and JavaScript, Harvard University (2022)
-        </li>
-        <li>
-          <b>Bachelor's Degree</b>, Geographic Information System, Ain Shams University (09/2013 – 07/2017)
-        </li>
+        <li><b>ASUS Webmaster</b> — Nov 2020 – Aug 2023</li>
+        <li><b>Perfect Touch Events, Web Developer</b> — Nov 2019 – Oct 2020</li>
+        <li><b>Gorgov DM Agency, Web Developer</b> — Nov 2018 – Oct 2019</li>
       </ul>
     </section>
-
-    <section>
+    <section id="projects" class="reveal">
       <h3>🚀 Projects</h3>
       <ul>
         <li>
-          <b>AI-Powered E-commerce Targeting System</b> – 
-          <a href="https://github.com/MHKamel/ecommerce-targeting-system" target="_blank">GitHub</a><br>
-          <span style="color:#888;font-size:0.97em;">Python, Scikit-learn, Pandas, Flask, K-Means, ALS, Cosine Similarity.<br>
-          Recommendation & segmentation, collaborative filtering, clustering, GDPR compliant.</span>
+          <b>AI-Powered E-commerce Targeting System</b>
+          <a href="https://github.com/MHKamel/ecommerce-targeting-system" target="_blank">[GitHub]</a>
         </li>
         <li>
-          <b>Trade in European Countries – Data Visualization Web Application</b> – 
-          <a href="https://github.com/MHKamel/govtech" target="_blank">GitHub</a><br>
-          <span style="color:#888;font-size:0.97em;">Python, Flask, HTML, CSS, Bootstrap, JQuery, Chart.js.<br>
-          Interactive import/export trends in Europe.</span>
-        </li>
-        <li>
-          <b>Carbon Footprint Monitoring Tool</b> – 
-          <a href="https://github.com/MHKamel/carbon_footprint" target="_blank">GitHub</a><br>
-          <span style="color:#888;font-size:0.97em;">Python, Flask, SQLAlchemy, Bootstrap, Chart.js. Web-based carbon footprint tracker.</span>
-        </li>
-        <li>
-          <b>Machine Learning-Based Predictive Analysis</b> – 
-          <a href="https://github.com/MHKamel/Machine-Learning-Based-Predictive-Analysis" target="_blank">GitHub</a><br>
-          <span style="color:#888;font-size:0.97em;">Python, Jupyter Notebook, Scikit-learn, Pandas, NumPy.</span>
+          <b>Trade in European Countries – Data Visualization</b>
+          <a href="https://github.com/MHKamel/govtech" target="_blank">[GitHub]</a>
         </li>
       </ul>
     </section>
-
-    <section>
-      <h3>📜 Courses & Certificates</h3>
-      <ul>
-        <li>Advanced Digital Marketing (Udacity)</li>
-        <li>Content Marketing: Newsletters (LinkedIn)</li>
-        <li>Email Marketing: Strategy and Optimization (LinkedIn)</li>
-        <li>
-          Google Analytics Certificates: 
-          <a href="https://analytics.google.com/analytics/academy/certificate/nRjlAQM_ScmBQ" target="_blank">Beginners</a>,
-          <a href="https://analytics.google.com/analytics/academy/certificate/xwCUC5mRQeCH" target="_blank">Advanced</a>,
-          <a href="https://analytics.google.com/analytics/academy/certificate/ZbKM1setTvuksD" target="_blank">Power Users</a>,
-          <a href="https://analytics.google.com/analytics/academy/certificate/oKe483vwQ5udu" target="_blank">360</a>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>🌐 Languages</h3>
-      <ul>
-        <li>Arabic (Native or Bilingual)</li>
-        <li>English (Full Professional)</li>
-        <li>German & French (Elementary)</li>
-      </ul>
-    </section>
-
-    <section>
+    <section id="contact" class="reveal">
       <h3>✉️ Contact Me</h3>
       <form class="contact-form" action="mailto:mohamed.hassankamel.94@gmail.com" method="POST" enctype="text/plain">
         <input type="text" name="name" placeholder="Your Name" required>
@@ -172,40 +98,11 @@
     </section>
   </main>
 
+  <button id="backToTop" title="Back to Top">⬆️</button>
+
   <footer>
     <p>&copy; 2025 Mohamed Amin. All rights reserved.</p>
   </footer>
-
-  <script>
-    // Dark mode toggle
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-      var btn = document.getElementById('darkBtn');
-      if(document.body.classList.contains('dark-mode')) {
-        btn.textContent = '☀️ Light Mode';
-      } else {
-        btn.textContent = '🌙 Dark Mode';
-      }
-    }
-  </script>
-  <style>
-    /* Overlay effect for banner */
-    .banner-wrap {
-      position: relative;
-    }
-    .banner-overlay {
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: linear-gradient(to bottom, rgba(38,49,89,0.33) 60%, rgba(246,248,250,0.02));
-      pointer-events: none;
-      z-index: 1;
-      border-radius: 0 0 28px 28px;
-    }
-    @media (max-width: 600px) {
-      .banner { max-height: 110px; }
-      .profile-img { width: 75px; height: 75px;}
-      .profile-box h1 { font-size: 1.1rem; }
-    }
-  </style>
+  <script src="main.js"></script>
 </body>
 </html>
