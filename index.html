@@ -22,50 +22,48 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top nav bar: -->
-  <nav class="top-nav" aria-label="Main navigation">
+ <!-- TOP NAVBAR -->
+<nav class="top-nav" aria-label="Main navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <img src="profile.jpeg" alt="Mohamed Amin Logo" class="nav-logo">
+      <span>Mohamed Amin</span>
+    </div>
     <ul>
-      <li><a href="#about"><span>🔎</span> About</a></li>
-      <li><a href="#skills"><span>💡</span> Skills</a></li>
-      <li><a href="#experience"><span>💼</span> Experience</a></li>
-      <li><a href="#education"><span>📚</span> Education</a></li>
-      <li><a href="#projects"><span>🚀</span> Projects</a></li>
-      <li><a href="#courses"><span>🎓</span> Courses</a></li>
-      <li><a href="#languages"><span>🌍</span> Languages</a></li>
-      <li><a href="#contact"><span>✉️</span> Contact</a></li>
+      <li><a href="#about"><span class="nav-icon">🔎</span><span class="nav-label">About</span></a></li>
+      <li><a href="#skills"><span class="nav-icon">💡</span><span class="nav-label">Skills</span></a></li>
+      <li><a href="#experience"><span class="nav-icon">💼</span><span class="nav-label">Experience</span></a></li>
+      <li><a href="#education"><span class="nav-icon">📚</span><span class="nav-label">Education</span></a></li>
+      <li><a href="#projects"><span class="nav-icon">🚀</span><span class="nav-label">Projects</span></a></li>
+      <li><a href="#courses"><span class="nav-icon">🎓</span><span class="nav-label">Courses</span></a></li>
+      <li><a href="#languages"><span class="nav-icon">🌍</span><span class="nav-label">Languages</span></a></li>
+      <li><a href="#contact"><span class="nav-icon">✉️</span><span class="nav-label">Contact</span></a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
 
-  <header>
-    <div class="banner-wrap">
-      <img src="banner.jpeg" alt="Banner image showing abstract tech design" class="banner" />
-      <div class="banner-overlay"></div>
-      <img src="profile.jpeg" alt="Mohamed Amin profile photo" class="profile-img-hero" id="profile-img-hero" />
-    </div>
-    <div class="profile-hero-card" id="profile-hero-card" role="region" aria-label="Intro">
+<!-- HEADER HERO -->
+<header>
+  <div class="banner-hero">
+    <img src="banner.jpeg" alt="Tech banner" class="banner-img"/>
+    <div class="banner-glass"></div>
+    <div class="profile-card-glass">
+      <img src="profile.jpeg" alt="Mohamed Amin" class="profile-hero-img">
       <h1>Mohamed Amin</h1>
-      <h2 id="animated-title"></h2>
-      <div class="contact-icons">
-        <span title="Location">📍 Berlin, Germany</span>
-        <span title="Phone">☎️ <a href="tel:+4915231698987">+49 1523 1698987</a></span>
-        <span title="Email">✉️ <a href="mailto:mohamed.hassankamel.94@gmail.com">mohamed.hassankamel.94@gmail.com</a></span>
+      <p class="hero-subtitle">Senior Webmaster &mdash; MarTech & Ecommerce Expert <br>DevOps Engineer | AI & Web Infrastructure</p>
+      <div class="hero-contacts">
+        <span>📍 Berlin, Germany</span>
+        <span>☎️ <a href="tel:+4915231698987">+49 1523 1698987</a></span>
+        <span>✉️ <a href="mailto:mohamed.hassankamel.94@gmail.com">mohamed.hassankamel.94@gmail.com</a></span>
       </div>
-      <div class="hero-links">
-        <a href="https://www.linkedin.com/in/mohamed-hassan-kamel-webmaster/" target="_blank" class="social-link" aria-label="LinkedIn">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="icon" alt="LinkedIn" /> LinkedIn
-        </a>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/mohamed-hassan-kamel-webmaster/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
         <span>|</span>
-        <a href="https://github.com/MHKamel" target="_blank" class="social-link" aria-label="GitHub">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" class="icon" alt="GitHub" /> GitHub
-        </a>
-      </div>
-      <div class="cv-buttons">
-        <button onclick="toggleDarkMode()" id="darkBtn">🌙 Dark Mode</button>
-        <a href="Mohamed's Resume.pdf" class="download-btn" download>⬇️ Download PDF CV</a>
+        <a href="https://github.com/MHKamel" target="_blank" aria-label="GitHub">GitHub</a>
       </div>
     </div>
-  </header>
-
+  </div>
+</header>
   
   <main>
 
