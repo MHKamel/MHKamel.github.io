@@ -1,49 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mohamed Amin | Senior Webmaster & DevOps Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Sticky Navigation Bar -->
-  <nav id="navbar">
-    <div class="nav-container">
-      <a href="#" class="logo">Mohamed Amin</a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button onclick="toggleDarkMode()" id="darkBtnNav">🌙</button>
-    </div>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <header id="hero">
+  <header>
     <div class="banner-wrap">
-      <img src="banner.jpeg" alt="Banner" class="banner">
+      <img src="banner.jpeg" alt="Banner" class="banner" />
       <div class="banner-overlay"></div>
-      <img src="profile.jpeg" alt="Mohamed Amin" class="profile-img-hero" id="profile-img-hero">
+      <img src="profile.jpeg" alt="Mohamed Amin" class="profile-img-hero" id="profile-img-hero" />
     </div>
     <div class="profile-hero-card" id="profile-hero-card">
       <h1>Mohamed Amin</h1>
       <h2 id="animated-title"></h2>
       <div class="contact-icons">
-        <span title="Location">📍 <span>Berlin, Germany</span></span>
+        <span title="Location">📍 Berlin, Germany</span>
         <span title="Phone">☎️ <a href="tel:+4915231698987">+49 1523 1698987</a></span>
         <span title="Email">✉️ <a href="mailto:mohamed.hassankamel.94@gmail.com">mohamed.hassankamel.94@gmail.com</a></span>
       </div>
       <div class="hero-links">
-        <a href="https://www.linkedin.com/in/mohamed-hassan-kamel-webmaster/" target="_blank" class="social-link" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="icon"> LinkedIn</a>
+        <a href="https://www.linkedin.com/in/mohamed-hassan-kamel-webmaster/" target="_blank" class="social-link" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="icon" alt="LinkedIn" /> LinkedIn
+        </a>
         <span>|</span>
-        <a href="https://github.com/MHKamel" target="_blank" class="social-link" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" class="icon"> GitHub</a>
+        <a href="https://github.com/MHKamel" target="_blank" class="social-link" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" class="icon" alt="GitHub" /> GitHub
+        </a>
       </div>
       <div class="cv-buttons">
+        <button onclick="toggleDarkMode()" id="darkBtn">🌙 Dark Mode</button>
         <a href="Mohamed's Resume.pdf" class="download-btn" download>⬇️ Download PDF CV</a>
       </div>
     </div>
@@ -55,17 +44,22 @@
       <p>
         M.Eng Computer Science candidate in Berlin with 4+ years of experience designing automated, scalable web systems and analytics platforms — including for ASUS. I specialize in DevOps tooling, CI/CD infrastructure, and AI integration, with deep roots in e-commerce optimization and digital marketing automation.
       </p>
+      <p>
+        Previously served as a MarTech and eCommerce specialist, where I combined full-stack development with marketing automation, SEO, and predictive analytics to deliver high-impact customer experiences.
+      </p>
     </section>
+
     <section id="skills" class="reveal">
       <h3>💡 Skills</h3>
       <ul class="skills">
         <li><b>Frontend:</b> HTML5, CSS3, JavaScript (ES6+)</li>
         <li><b>Backend:</b> Python, PHP, MySQL, REST APIs</li>
         <li><b>AI/ML:</b> Scikit-learn, Pandas, KMeans, ALS, Analytics Dashboards</li>
-        <li><b>DevOps/Infra:</b> GitHub Actions, Jenkins, CI/CD pipelines, Docker, Bash</li>
+        <li><b>DevOps/Infra:</b> GitHub Actions, Jenkins, CI/CD, Docker, Bash</li>
         <li><b>Cloud:</b> Azure, AWS (basics), Serverless</li>
       </ul>
     </section>
+
     <section id="experience" class="reveal">
       <h3>💼 Experience</h3>
       <ul>
@@ -74,6 +68,7 @@
         <li><b>Gorgov DM Agency, Web Developer</b> — Nov 2018 – Oct 2019</li>
       </ul>
     </section>
+
     <section id="projects" class="reveal">
       <h3>🚀 Projects</h3>
       <ul>
@@ -87,18 +82,17 @@
         </li>
       </ul>
     </section>
+
     <section id="contact" class="reveal">
       <h3>✉️ Contact Me</h3>
       <form class="contact-form" action="mailto:mohamed.hassankamel.94@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
-
-  <button id="backToTop" title="Back to Top">⬆️</button>
 
   <footer>
     <p>&copy; 2025 Mohamed Amin. All rights reserved.</p>
