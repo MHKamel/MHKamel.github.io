@@ -409,44 +409,70 @@ body.dark-mode .contact-icons a {
 /* TOP NAV FOR MOBILE */
 .top-nav {
   position: fixed;
-  top: 0; left: 0; width: 100vw;
+  top: 0;
+  left: 0;
+  width: 100vw;
   z-index: 999;
   background: #263159;
   box-shadow: 0 2px 16px rgba(38,49,89,0.11);
   display: flex;
   justify-content: center;
   padding: 0 2vw;
+  height: 56px;
+  align-items: center;
 }
+
 .top-nav ul {
   list-style: none;
   display: flex;
-  gap: 16px;
-  margin: 0; padding: 0;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
 }
-.top-nav li { margin: 0; }
+
+.top-nav li {
+  margin: 0;
+}
+
 .top-nav a {
   color: #fff;
   font-weight: 600;
-  padding: 12px 7px;
-  font-size: 1.06em;
+  padding: 12px 13px;
+  font-size: 1.09em;
   border-radius: 10px;
   text-decoration: none;
   transition: background 0.18s, color 0.18s;
   display: flex;
   align-items: center;
-  gap: 5px;
-}
-.top-nav a:hover, .top-nav a.active {
-  background: #222b4a;
-  color: #7ec1ff;
-}
-.top-nav span { font-size: 1.08em; }
-body { padding-top: 56px; } /* For space under top nav on mobile */
-@media (min-width: 951px) {
-  .top-nav { display: none !important; }
+  gap: 7px;
 }
 
-body.dark-mode .hero-links a.social-link:hover,
-body.dark-mode .contact-icons a:hover {
-  color: #1976d2;
+.top-nav a:hover, .top-nav a.active {
+  background: #222b4a;
+  color: #68a0fa;
+}
+
+.top-nav span {
+  font-size: 1.18em;
+}
+
+/* Add padding to body so content is not hidden behind nav */
+body {
+  padding-top: 66px;
+}
+
+/* Responsive: stack menu on small screens */
+@media (max-width: 700px) {
+  .top-nav ul {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .top-nav {
+    padding: 0 0.5vw;
+    height: auto;
+  }
+  .top-nav a {
+    font-size: 1em;
+    padding: 10px 8px;
+  }
 }
