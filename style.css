@@ -2,9 +2,9 @@
 
 body {
   font-family: 'Inter', Arial, sans-serif;
-  background: #f4f6fb;
   margin: 0;
-  padding-top: 84px; /* space for navbar */
+  background: #f4f6fb;
+  padding-top: 84px;
 }
 
 header {
@@ -352,14 +352,13 @@ body.dark-mode .contact-icons a {
   box-shadow: 0 6px 24px rgba(36,51,120,0.12), 0 1.5px 8px rgba(60,60,60,0.07);
   backdrop-filter: blur(7px);
   border-bottom: 1.5px solid #28366f1a;
-  padding: 0;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1160px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 3vw;
   height: 70px;
@@ -441,32 +440,36 @@ body.dark-mode .contact-icons a {
 .banner-hero {
   position: relative;
   width: 100vw;
-  min-height: 220px;
+  min-height: 260px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
+
 .banner-img {
   width: 100vw;
-  height: 220px;
+  height: 260px;
   object-fit: cover;
   border-radius: 0 0 36px 36px;
-  opacity: 0.97;
+  opacity: 0.98;
   filter: saturate(1.06) brightness(0.96);
+  display: block;
 }
+
 .banner-glass {
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 220px;
+  top: 0; left: 0; width: 100%; height: 260px;
   background: linear-gradient(to bottom, rgba(37,46,77,0.19) 0%, rgba(41,60,100,0.13) 95%);
   backdrop-filter: blur(3.5px);
   border-radius: 0 0 36px 36px;
   z-index: 1;
 }
+
 .profile-card-glass {
   position: absolute;
-  left: 50%; top: 165px; transform: translateX(-50%);
-  background: rgba(255,255,255,0.94);
+  left: 50%; top: 175px; transform: translateX(-50%);
+  background: rgba(255,255,255,0.97);
   border-radius: 22px;
   box-shadow: 0 6px 28px rgba(38,49,89,0.15);
   padding: 36px 32px 22px 32px;
@@ -536,9 +539,8 @@ body.dark-mode .contact-icons a {
 
 @media (max-width: 600px) {
   .banner-img, .banner-glass { height: 120px; border-radius: 0 0 18px 18px; }
-  .profile-card-glass { top: 85px; padding: 18px 6vw 12px 6vw; min-width: 0; }
+  .profile-card-glass { top: 65px; padding: 15px 3vw 10px 3vw; min-width: 0; }
   .profile-hero-img { width: 60px; height: 60px; margin-top: -36px; }
   .profile-card-glass h1 { font-size: 1.19rem; }
   .hero-subtitle { font-size: 0.96rem; }
 }
-
