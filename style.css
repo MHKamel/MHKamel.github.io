@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 body {
   font-family: 'Inter', Arial, sans-serif;
@@ -537,10 +538,15 @@ body.dark-mode .contact-icons a {
 }
 .hero-socials a:hover { color: #263159; text-decoration: underline; }
 
+.main-content {
+  max-width: 900px;
+  margin: 120px auto 0 auto; /* Give more margin-top to clear the hero card! */
+  padding: 0 24px 48px 24px;
+}
+
 @media (max-width: 600px) {
-  .banner-img, .banner-glass { height: 120px; border-radius: 0 0 18px 18px; }
-  .profile-card-glass { top: 65px; padding: 15px 3vw 10px 3vw; min-width: 0; }
-  .profile-hero-img { width: 60px; height: 60px; margin-top: -36px; }
-  .profile-card-glass h1 { font-size: 1.19rem; }
-  .hero-subtitle { font-size: 0.96rem; }
+  .main-content {
+    margin-top: 90px;
+    padding: 0 5vw 40px 5vw;
+  }
 }
