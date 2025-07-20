@@ -540,7 +540,7 @@ body.dark-mode .contact-icons a {
 
 .main-content {
   max-width: 900px;
-  margin: 120px auto 0 auto; /* Give more margin-top to clear the hero card! */
+  margin: 180px auto 0 auto; /* Increase this value to push content down */
   padding: 0 24px 48px 24px;
 }
 
