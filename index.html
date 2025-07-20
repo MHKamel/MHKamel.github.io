@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mohamed Amin | Senior Webmaster & DevOps Engineer</title>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="banner.jpeg" alt="Banner" class="banner">
+    <div class="banner-wrap">
+      <img src="banner.jpeg" alt="Banner" class="banner">
+      <div class="banner-overlay"></div>
+    </div>
     <div class="profile-box">
       <img src="profile.jpeg" alt="Mohamed Amin" class="profile-img">
       <div>
@@ -17,13 +22,13 @@
       </div>
     </div>
     <div class="contact-info">
-      <p>📍 Berlin, Germany</p>
-      <p>📞 <a href="tel:+4915231698987">+49 1523 1698987</a></p>
-      <p>📧 <a href="mailto:mohamed.hassankamel.94@gmail.com">mohamed.hassankamel.94@gmail.com</a></p>
-      <p>
+      <div>📍 Berlin, Germany</div>
+      <div>📞 <a href="tel:+4915231698987">+49 1523 1698987</a></div>
+      <div>✉️ <a href="mailto:mohamed.hassankamel.94@gmail.com">mohamed.hassankamel.94@gmail.com</a></div>
+      <div>
         <a href="https://www.linkedin.com/in/mohamed-hassan-kamel-webmaster/" target="_blank">LinkedIn</a> |
         <a href="https://github.com/MHKamel" target="_blank">GitHub</a>
-      </p>
+      </div>
     </div>
     <div class="cv-buttons">
       <button onclick="toggleDarkMode()" id="darkBtn">🌙 Dark Mode</button>
@@ -33,12 +38,20 @@
 
   <main>
     <section>
-      <h3>About</h3>
-      <p>M.Eng Computer Science candidate in Berlin with 4+ years of experience designing automated, scalable web systems and analytics platforms — including for ASUS. I specialize in DevOps tooling, CI/CD infrastructure, and AI integration, with deep roots in e-commerce optimization and digital marketing automation. Skilled at working cross-functionally, I bring a proven track record of clean code delivery, system reliability, and continuous improvement in fast-paced environments.</p>
+      <h3>👋 About Me</h3>
+      <p>
+        I am an M.Eng Computer Science candidate in Berlin with 4+ years of experience designing automated, scalable web systems and analytics platforms — including for ASUS. I specialize in DevOps tooling, CI/CD infrastructure, and AI integration, with deep roots in e-commerce optimization and digital marketing automation.
+      </p>
+      <p>
+        Previously served as a MarTech and eCommerce specialist, where I combined full-stack development with marketing automation, SEO, and predictive analytics to deliver high-impact customer experiences. Passionate about using data and DevOps principles to streamline development, personalize services, and scale infrastructure efficiently.
+      </p>
+      <p>
+        Skilled at working cross-functionally across development, marketing, and sales teams, I bring a proven track record of clean code delivery, system reliability, and continuous improvement in fast-paced environments.
+      </p>
     </section>
 
     <section>
-      <h3>Skills</h3>
+      <h3>💡 Skills</h3>
       <ul class="skills">
         <li><b>Frontend:</b> HTML5, CSS3, JavaScript (ES6+)</li>
         <li><b>Backend:</b> Python, PHP, MySQL, REST APIs</li>
@@ -52,7 +65,7 @@
     </section>
 
     <section>
-      <h3>Experience</h3>
+      <h3>💼 Experience</h3>
       <div class="experience">
         <h4>Webmaster & Ecommerce Specialist <span>ASUS | Cairo | Nov 2020 – Aug 2023</span></h4>
         <ul>
@@ -80,61 +93,76 @@
     </section>
 
     <section>
-      <h3>Education</h3>
-      <ul>
-        <li><b>Master of Engineering in Computer Science</b>, GISMA University of Applied Sciences, Berlin (09/2023 – 03/2025)<br>
-          Thesis: AI-Driven Personalization & Customer Behavior in E-commerce</li>
-        <li><b>CS50's Web Programming</b> with Python and JavaScript, Harvard University (2022)</li>
-        <li><b>Bachelor's Degree</b>, Geographic Information System, Ain Shams University (09/2013 – 07/2017)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Projects</h3>
+      <h3>🎓 Education</h3>
       <ul>
         <li>
-          <b>AI-Powered E-commerce Targeting System</b> – <a href="https://github.com/MHKamel/ecommerce-targeting-system" target="_blank">GitHub</a><br>
-          Technologies: Python, Scikit-learn, Pandas, Flask, K-Means, ALS, Cosine Similarity. <br>
-          Built recommendation & segmentation, collaborative filtering, clustering, GDPR compliant.
+          <b>Master of Engineering in Computer Science</b>, GISMA University of Applied Sciences, Berlin (09/2023 – 03/2025)<br>
+          <span style="color: #888;">Thesis: AI-Driven Personalization & Customer Behavior in E-commerce</span>
         </li>
         <li>
-          <b>Trade in European Countries – Data Visualization Web Application</b> – <a href="https://github.com/MHKamel/govtech" target="_blank">GitHub</a><br>
-          Technologies: Python, Flask, HTML, CSS, Bootstrap, JQuery, Chart.js.<br>
-          Interactive import/export trends in Europe.
+          <b>CS50's Web Programming</b> with Python and JavaScript, Harvard University (2022)
         </li>
         <li>
-          <b>Carbon Footprint Monitoring Tool</b> – <a href="https://github.com/MHKamel/carbon_footprint" target="_blank">GitHub</a><br>
-          Python, Flask, SQLAlchemy, Bootstrap, Chart.js. Web-based carbon footprint tracker.
-        </li>
-        <li>
-          <b>Machine Learning-Based Predictive Analysis</b> – <a href="https://github.com/MHKamel/Machine-Learning-Based-Predictive-Analysis" target="_blank">GitHub</a><br>
-          Python, Jupyter Notebook, Scikit-learn, Pandas, NumPy.
+          <b>Bachelor's Degree</b>, Geographic Information System, Ain Shams University (09/2013 – 07/2017)
         </li>
       </ul>
     </section>
 
     <section>
-      <h3>Courses & Certificates</h3>
+      <h3>🚀 Projects</h3>
+      <ul>
+        <li>
+          <b>AI-Powered E-commerce Targeting System</b> – 
+          <a href="https://github.com/MHKamel/ecommerce-targeting-system" target="_blank">GitHub</a><br>
+          <span style="color:#888;font-size:0.97em;">Python, Scikit-learn, Pandas, Flask, K-Means, ALS, Cosine Similarity.<br>
+          Recommendation & segmentation, collaborative filtering, clustering, GDPR compliant.</span>
+        </li>
+        <li>
+          <b>Trade in European Countries – Data Visualization Web Application</b> – 
+          <a href="https://github.com/MHKamel/govtech" target="_blank">GitHub</a><br>
+          <span style="color:#888;font-size:0.97em;">Python, Flask, HTML, CSS, Bootstrap, JQuery, Chart.js.<br>
+          Interactive import/export trends in Europe.</span>
+        </li>
+        <li>
+          <b>Carbon Footprint Monitoring Tool</b> – 
+          <a href="https://github.com/MHKamel/carbon_footprint" target="_blank">GitHub</a><br>
+          <span style="color:#888;font-size:0.97em;">Python, Flask, SQLAlchemy, Bootstrap, Chart.js. Web-based carbon footprint tracker.</span>
+        </li>
+        <li>
+          <b>Machine Learning-Based Predictive Analysis</b> – 
+          <a href="https://github.com/MHKamel/Machine-Learning-Based-Predictive-Analysis" target="_blank">GitHub</a><br>
+          <span style="color:#888;font-size:0.97em;">Python, Jupyter Notebook, Scikit-learn, Pandas, NumPy.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>📜 Courses & Certificates</h3>
       <ul>
         <li>Advanced Digital Marketing (Udacity)</li>
         <li>Content Marketing: Newsletters (LinkedIn)</li>
         <li>Email Marketing: Strategy and Optimization (LinkedIn)</li>
-        <li>Google Analytics Certificates: <a href="https://analytics.google.com/analytics/academy/certificate/nRjlAQM_ScmBQ" target="_blank">Beginners</a>, <a href="https://analytics.google.com/analytics/academy/certificate/xwCUC5mRQeCH" target="_blank">Advanced</a>, <a href="https://analytics.google.com/analytics/academy/certificate/ZbKM1setTvuksD" target="_blank">Power Users</a>, <a href="https://analytics.google.com/analytics/academy/certificate/oKe483vwQ5udu" target="_blank">360</a></li>
+        <li>
+          Google Analytics Certificates: 
+          <a href="https://analytics.google.com/analytics/academy/certificate/nRjlAQM_ScmBQ" target="_blank">Beginners</a>,
+          <a href="https://analytics.google.com/analytics/academy/certificate/xwCUC5mRQeCH" target="_blank">Advanced</a>,
+          <a href="https://analytics.google.com/analytics/academy/certificate/ZbKM1setTvuksD" target="_blank">Power Users</a>,
+          <a href="https://analytics.google.com/analytics/academy/certificate/oKe483vwQ5udu" target="_blank">360</a>
+        </li>
       </ul>
     </section>
 
     <section>
-      <h3>Languages</h3>
+      <h3>🌐 Languages</h3>
       <ul>
         <li>Arabic (Native or Bilingual)</li>
         <li>English (Full Professional)</li>
         <li>German & French (Elementary)</li>
       </ul>
     </section>
-    
-    <!-- Contact Form Section -->
+
     <section>
-      <h3>Contact Me</h3>
+      <h3>✉️ Contact Me</h3>
       <form class="contact-form" action="mailto:mohamed.hassankamel.94@gmail.com" method="POST" enctype="text/plain">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
@@ -142,7 +170,6 @@
         <button type="submit">Send Message</button>
       </form>
     </section>
-    
   </main>
 
   <footer>
@@ -161,5 +188,24 @@
       }
     }
   </script>
+  <style>
+    /* Overlay effect for banner */
+    .banner-wrap {
+      position: relative;
+    }
+    .banner-overlay {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(to bottom, rgba(38,49,89,0.33) 60%, rgba(246,248,250,0.02));
+      pointer-events: none;
+      z-index: 1;
+      border-radius: 0 0 28px 28px;
+    }
+    @media (max-width: 600px) {
+      .banner { max-height: 110px; }
+      .profile-img { width: 75px; height: 75px;}
+      .profile-box h1 { font-size: 1.1rem; }
+    }
+  </style>
 </body>
 </html>
