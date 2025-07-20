@@ -538,14 +538,14 @@ body.dark-mode .contact-icons a {
 }
 .hero-socials a:hover { color: #263159; text-decoration: underline; }
 
+.main-content {
+  max-width: 900px;
+  margin: 180px auto 0 auto; /* Increase this value to push content down */
+  padding: 0 24px 48px 24px;
+}
 @media (max-width: 600px) {
   .main-content {
     margin-top: 90px;
     padding: 0 5vw 40px 5vw;
   }
-}
-.main-content {
-  max-width: 900px;
-  margin: 180px auto 0 auto; /* Increase this value to push content down */
-  padding: 0 24px 48px 24px;
 }
