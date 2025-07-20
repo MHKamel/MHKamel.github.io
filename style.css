@@ -540,12 +540,13 @@ body.dark-mode .contact-icons a {
 
 .main-content {
   max-width: 900px;
-  margin: 180px auto 0 auto; /* Increase this value to push content down */
+  margin: 230px auto 0 auto;  /* Increase this to 230px or even higher if needed */
   padding: 0 24px 48px 24px;
 }
+
 @media (max-width: 600px) {
   .main-content {
-    margin-top: 90px;
+    margin-top: 180px;
     padding: 0 5vw 40px 5vw;
   }
 }
