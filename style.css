@@ -395,16 +395,6 @@ body.dark-mode .contact-icons a {
     display: none;
   }
 }
-@media (max-width: 950px) {
-  .top-nav {
-    display: flex;
-  }
-}
-@media (min-width: 951px) {
-  .top-nav {
-    display: none !important;
-  }
-}
 
 /* TOP NAV FOR MOBILE */
 .top-nav {
@@ -412,7 +402,7 @@ body.dark-mode .contact-icons a {
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 999;
+  z-index: 9999;
   background: #263159;
   box-shadow: 0 2px 16px rgba(38,49,89,0.11);
   display: flex;
