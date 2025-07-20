@@ -71,10 +71,10 @@ window.addEventListener('scroll', () => {
   const scrollY = window.pageYOffset || document.documentElement.scrollTop;
   let currentSection = null;
   sections.forEach(section => {
-    const offsetTop = section.offsetTop - 90;
+    const offsetTop = section.offsetTop - 80;
     if(scrollY >= offsetTop) currentSection = section.id;
   });
-  document.querySelectorAll('.side-nav a, .top-nav a').forEach(link => {
+  document.querySelectorAll('.top-nav a').forEach(link => {
     link.classList.remove('active');
     if (currentSection && link.getAttribute('href') === `#${currentSection}`) {
       link.classList.add('active');
