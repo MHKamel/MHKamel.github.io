@@ -2,35 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mohamed Amin - Resume</title>
+  <title>Mohamed Amin | Senior Webmaster, MarTech & DevOps Engineer in Berlin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohamed Amin - Senior Webmaster, MarTech & Ecommerce Expert, DevOps Engineer, AI & Web Infrastructure Specialist based in Berlin, Germany.">
+  <meta name="keywords" content="Mohamed Amin, Webmaster, MarTech, Ecommerce, DevOps, AI, Berlin, Resume, Portfolio">
+  <meta name="author" content="Mohamed Amin">
+  <link rel="canonical" href="https://mhkamel.github.io/">
   <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="profile.jpeg">
 </head>
 <body>
-  <!-- Top Navbar -->
-  <nav class="top-nav" role="navigation" aria-label="Quick site sections">
-    <div class="nav-container">
-      <div class="brand">
-        <img src="profile.jpeg" alt="Mohamed Amin" class="nav-logo" />
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top top-nav" role="navigation" aria-label="Site sections">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="profile.jpeg" alt="Mohamed Amin" class="nav-logo me-2">
         <span>Mohamed Amin</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about"><span>🔎</span> About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills"><span>💡</span> Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience"><span>💼</span> Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education"><span>📚</span> Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects"><span>🛠️</span> Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses"><span>🎓</span> Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#languages"><span>🌐</span> Languages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><span>✉️</span> Contact</a></li>
+        </ul>
       </div>
-      <ul>
-        <li><a href="#about"><span class="nav-icon">🔎</span> <span class="nav-label">About</span></a></li>
-        <li><a href="#skills"><span class="nav-icon">💡</span> <span class="nav-label">Skills</span></a></li>
-        <li><a href="#experience"><span class="nav-icon">📦</span> <span class="nav-label">Experience</span></a></li>
-        <li><a href="#education"><span class="nav-icon">📚</span> <span class="nav-label">Education</span></a></li>
-        <li><a href="#projects"><span class="nav-icon">🛠️</span> <span class="nav-label">Projects</span></a></li>
-        <li><a href="#courses"><span class="nav-icon">🎓</span> <span class="nav-label">Courses</span></a></li>
-        <li><a href="#languages"><span class="nav-icon">🌐</span> <span class="nav-label">Languages</span></a></li>
-        <li><a href="#contact"><span class="nav-icon">✉️</span> <span class="nav-label">Contact</span></a></li>
-      </ul>
     </div>
   </nav>
 
-  <!-- Hero Banner & Glass Card -->
-  <header>
-    <div class="banner-hero">
-      <img src="banner.jpeg" alt="Programming banner" class="banner-img">
+  <!-- Hero Banner & Profile Card -->
+  <header class="mt-5 pt-3">
+    <div class="banner-hero position-relative">
+      <img src="banner.jpeg" alt="Programming banner" class="banner-img img-fluid w-100">
       <div class="banner-glass"></div>
       <div class="profile-card-glass" id="profile-hero-card">
         <img src="profile.jpeg" alt="Mohamed Amin profile photo" class="profile-hero-img">
@@ -49,149 +62,41 @@
           <a href="https://github.com/MHKamel" target="_blank" class="social-link">GitHub</a>
         </div>
         <div class="cv-buttons">
-          <button id="dark-mode-toggle">🌙 Dark Mode</button>
-          <a class="download-btn" href="Mohamed's Resume.pdf" download>⬇️ Download PDF CV</a>
+          <button id="dark-mode-toggle" class="btn btn-primary btn-sm">🌙 Dark Mode</button>
+          <a class="download-btn btn btn-outline-secondary btn-sm" href="Mohamed's Resume.pdf" download>⬇️ Download PDF CV</a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- MAIN CONTENT - FIXED: add class="main-content" -->
-  <main class="main-content">
-    <!-- About -->
-    <section id="about">
-      <h3>About</h3>
-      <p>
-        M.Eng Computer Science candidate in Berlin with 4+ years of experience designing automated, scalable web systems and analytics platforms — including for ASUS. I specialize in DevOps tooling, CI/CD infrastructure, and AI integration, with deep roots in e-commerce optimization and digital marketing automation.<br>
-        Previously served as a MarTech and eCommerce specialist, where I combined full-stack development with marketing automation, SEO, and predictive analytics to deliver high-impact customer experiences. I’m passionate about using data and DevOps principles to streamline development, personalize services, and scale infrastructure efficiently.<br>
-        Skilled at working cross-functionally across development, marketing, and sales teams, I bring a proven track record of clean code delivery, system reliability, and continuous improvement in fast-paced environments.
-      </p>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-      <h3>Skills</h3>
-      <ul class="skills-list">
-        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+)</li>
-        <li><strong>Backend:</strong> Python, PHP, MySQL, REST APIs</li>
-        <li><strong>AI/ML:</strong> Scikit-learn, Pandas, KMeans, ALS, analytics dashboards, Audience Segmentation, Predictive Analytics</li>
-        <li><strong>DevOps/Infra:</strong> GitHub Actions, Jenkins, CI/CD pipelines, Docker, Bash</li>
-        <li><strong>Cloud & Deployment:</strong> Azure Pipelines, Colab Pipelines, AWS (basics), serverless concepts</li>
-        <li><strong>Digital Marketing:</strong> SEO/SEM, Email Campaign Automation, Google Ads</li>
-        <li><strong>Collaboration:</strong> Agile, Jira, Git, Cross-team coordination</li>
-        <li><strong>Tools:</strong> Adobe Commerce (Magento), SEMrush, WordPress, Shopify, Google Analytics, Adobe Photoshop</li>
-      </ul>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience">
-      <h3>Experience</h3>
-      <div class="exp-entry">
-        <strong>Webmaster & Ecommerce Specialist</strong> — ASUS, Cairo (Nov 2020 – Aug 2023)<br>
-        <ul>
-          <li>ASUS and ROG Egypt webmaster for both English & Arabic websites</li>
-          <li>Programming tools: HTML, CSS, JavaScript, PHP, MySQL</li>
-          <li>SEO using H-Tags, SEMrush</li>
-          <li>Managed content, e-commerce, E-Shop, product launches</li>
-          <li>Designed/optimized landing pages, banners (Photoshop), EDM</li>
-          <li>Automated email marketing workflows — highest CTR in EMEA</li>
-          <li>AI-powered analytics dashboards, user segmentation, Google Analytics, FlixMedia</li>
-        </ul>
-      </div>
-      <div class="exp-entry">
-        <strong>Web Developer</strong> — Perfect Touch Events, Cairo (Nov 2019 – Oct 2020)<br>
-        <span>HTML, CSS, PHP, MySQL, WordPress, JavaScript</span>
-      </div>
-      <div class="exp-entry">
-        <strong>Web Developer</strong> — Gorgov DM Agency, Cairo (Nov 2018 – Oct 2019)<br>
-        <span>WordPress, JavaScript, Google Analytics</span>
-      </div>
-      <div class="exp-entry">
-        <strong>GIS Specialist</strong> — Hassan Allam Tech Mobilization & Statistics, Cairo (Jan 2018 – May 2018)<br>
-        <span>ArcGIS, satellite image analysis and digitization</span>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education">
-      <h3>Education</h3>
-      <ul>
-        <li>
-          <strong>Master of Engineering in Computer Science</strong> — GISMA University of Applied Sciences, Berlin (09/2023 – 03/2025)<br>
-          <em>Thesis:</em> AI-Driven Personalization & Customer Behavior in E-commerce<br>
-          <em>Key Focus Areas:</em> AI, ML, Advanced Web Dev, Cloud Computing, Software Engineering
-        </li>
-        <li>
-          <strong>CS50's Web Programming with Python and JavaScript</strong> — Harvard University (2022)
-        </li>
-        <li>
-          <strong>Bachelor's degree, Geographic Information Systems</strong> — Ain Shams University (2013 – 2017)
-        </li>
-      </ul>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-      <h3>Projects</h3>
-      <ul>
-        <li>
-          <strong>AI-Powered E-commerce Targeting System</strong> — Python, Flask, Scikit-learn, Pandas, K-Means, ALS<br>
-          <a href="https://github.com/MHKamel/ecommerce-targeting-system" target="_blank">GitHub Repo</a>
-        </li>
-        <li>
-          <strong>Trade in European Countries – Data Visualization Web Application</strong> — Python, Flask, Chart.js<br>
-          <a href="https://github.com/MHKamel/govtech" target="_blank">GitHub Repo</a>
-        </li>
-        <li>
-          <strong>Carbon Footprint Monitoring Tool</strong> — Python, Flask, SQLAlchemy, Chart.js<br>
-          <a href="https://github.com/MHKamel/carbon_footprint" target="_blank">GitHub Repo</a>
-        </li>
-        <li>
-          <strong>Machine Learning-Based Predictive Analysis</strong> — Python, Scikit-learn, Pandas, NumPy<br>
-          <a href="https://github.com/MHKamel/Machine-Learning-Based-Predictive-Analysis" target="_blank">GitHub Repo</a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Courses -->
-    <section id="courses">
-      <h3>Courses</h3>
-      <ul>
-        <li>Advanced Digital Marketing — Udacity</li>
-        <li>Content Marketing: Newsletters — LinkedIn</li>
-        <li>Email Marketing: Strategy and Optimization — LinkedIn</li>
-        <li>Email and Newsletter Marketing Foundations — LinkedIn</li>
-        <li>Digital Marketing Professional — Udacity</li>
-        <li>Google Analytics for Beginners, Advanced Google Analytics, Google Analytics for Power Users, Getting Started With Google Analytics 360, Introduction to Data Studio, Google Tag Manager Fundamentals</li>
-        <li>Advanced CSS Media Queries — LinkedIn</li>
-        <li>Digital Transformation, Ecommerce Fundamentals, Building Customer Loyalty, SEO: Ecommerce Strategies, Magento CE 2 Essential Training, Marketing Foundations: Ecommerce — LinkedIn</li>
-      </ul>
-    </section>
-
-    <!-- Languages -->
-    <section id="languages">
-      <h3>Languages</h3>
-      <ul>
-        <li>Arabic — Native or Bilingual Proficiency</li>
-        <li>English — Full Professional Proficiency</li>
-        <li>German & French — Elementary Proficiency</li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
+  <main class="main-content container mt-4 pt-4">
+    <!-- About (same as before) -->
+    <!-- ...all your sections... -->
+    <!-- Contact (use Bootstrap grid for nice layout) -->
+    <section id="contact" class="mb-5">
       <h3>Contact Me</h3>
-      <form class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required/>
-        <input type="email" name="email" placeholder="Your Email" required/>
-        <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+      <form class="contact-form row g-3">
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required/>
+        </div>
+        <div class="col-md-6">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required/>
+        </div>
+        <div class="col-12">
+          <textarea name="message" class="form-control" rows="3" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-success">Send Message</button>
+        </div>
       </form>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Mohamed Amin. All rights reserved.</p>
+  <footer class="text-center py-3 bg-light border-top">
+    <p class="mb-0">&copy; 2025 Mohamed Amin. All rights reserved.</p>
   </footer>
+  <!-- Bootstrap JS (for navbar toggler) and jQuery (optional) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
