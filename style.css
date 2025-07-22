@@ -88,3 +88,9 @@ a:hover { color: #2260ae; }
 footer {
   font-size: .96rem;
 }
+
+/* AOS fallback: Always show sections if AOS fails */
+.no-aos .section-fade {
+  opacity: 1 !important;
+  transition: none !important;
+}
