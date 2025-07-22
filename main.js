@@ -88,3 +88,13 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+// Smooth scroll for nav links
+$('a.nav-link').on('click', function(e) {
+  var hash = this.hash;
+  if (hash !== "") {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top - 60
+    }, 600);
+  }
+});
