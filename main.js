@@ -23,7 +23,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
   });
 });
 
-// Bootstrap validation
+// Bootstrap validation and thank you
 (function () {
   'use strict'
   var forms = document.querySelectorAll('.needs-validation')
@@ -44,9 +44,13 @@ document.querySelectorAll('.nav-link').forEach(link => {
     })
 })()
 
-// AOS (Animate On Scroll)
-AOS.init({
-  duration: 700,
-  once: true,
-  offset: 100,
+// AOS (Animate On Scroll) - wait for DOM!
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      duration: 700,
+      once: true,
+      offset: 100,
+    });
+  }
 });
