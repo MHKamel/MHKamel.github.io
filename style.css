@@ -6,19 +6,27 @@ body {
 }
 
 .navbar {
-  background: #fff !important;
+  background: linear-gradient(90deg, #232d4d 0%, #285396 100%) !important;
+  /* Or: background: linear-gradient(90deg, #222b46 0%, #2a56a5 100%) !important; */
+  color: #fff !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
+
 .navbar a,
 .navbar-nav .nav-link,
 .navbar-brand {
-  color: #263159 !important;
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.18s;
 }
+
+/* Hover/Active: cyan/bright blue accent */
 .navbar a:hover,
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #24a7ff !important;
+  color: #a5e3ff !important;
+  text-shadow: none;
 }
-
 
 .nav-logo, .profile-img {
   border: 2px solid #fff;
