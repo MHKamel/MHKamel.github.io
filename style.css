@@ -5,22 +5,18 @@ body {
   font-size: 1rem;
 }
 
-/* Navbar base style: white text */
-.navbar,
+.navbar {
+  background: #fff !important;
+}
 .navbar a,
 .navbar-nav .nav-link,
 .navbar-brand {
-  color: #fff !important;
-  transition: color 0.18s;
+  color: #263159 !important;
 }
-
-/* Hover/Active style: blue (customize this color as needed) */
 .navbar a:hover,
 .navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active,
-.navbar a.active {
-  color: #24a7ff !important; /* Use any color you like */
-  text-shadow: none;
+.navbar-nav .nav-link.active {
+  color: #24a7ff !important;
 }
 
 
